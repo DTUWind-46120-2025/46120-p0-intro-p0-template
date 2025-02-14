@@ -1,6 +1,7 @@
 """Test your functions from Week 2 assignment.
 """
 import preclass_assignment.functions as fxn
+import numpy as np
 
 
 def test_greet(capsys):
@@ -18,9 +19,13 @@ def test_greet(capsys):
 def test_goldilocks(capsys):
     """Check goldilocks returns expected output"""
     # given
+    inp= 145 #test input to function
+    exp_out= "Just right. :)\n" #expected output
     # when
+    fxn.goldilocks(inp) #actual output
+    captured = capsys.readouterr()  # capture what would have been printed to screen
     # then
-    assert False  # TODO! Update the contents of this function so it correctly tests goldilocks
+    assert captured.out == exp_out #Update the contents of this function so it correctly tests goldilocks
 
 
 def test_square_list():
@@ -37,15 +42,22 @@ def test_square_list():
 def test_fibonacci_stop():
     """Check fibonacci functions works as expected."""
     # given
+    inp= 30 #test input to function
     # given
+    exp_out=[1, 1, 2, 3, 5, 8, 13, 21] #expected output
     # when
+    out = fxn.fibonacci_stop(inp)
     # then
-    assert False  # TODO! Update the contents of this function so it correctly tests fibonacci_stop
-
+    assert exp_out == out  #Update the contents of this function so it correctly tests fibonacci_stop
+   
 
 def test_clean_pitch():
     """Check clean_pitch works as expected."""
     # given
+    inp1= [-1,2,6,95]  #test input to function
+    inp2= [1,0,0,0]
+    exp_out= [-999,2,6,95] #expected output
     # when
+    out= fxn.clean_pitch(inp1,inp2)
     # then
-    assert False  # TODO! Update the contents of this function so it correctly tests clean_pitch
+    assert exp_out == out #Update the contents of this function so it correctly tests clean_pitch
