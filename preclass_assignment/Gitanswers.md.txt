@@ -1,0 +1,38 @@
+Questions
+
+1.What is the difference between git and GitLab?
+Git is a distributed version control system, while GitLab is a web-based platform which integrates Git repository management with continuous integration.
+
+2.What is the difference between GitLab, GitHub, and BitBucket?
+The difference between GitLab, GitHub, and BitBucket is that they have three different ways of dealing with the merge request process. 
+
+3.Why would I ever want to use git, but not GitLab?
+Git can be used for solo coding, while GitLab is a collaborative platform.
+
+4.What are the steps to update the GitLab server with some changes I made on my computer?
+I need to pull the file I updated on my computer to the remote on GitHub/GitLab so that the other team members can get it by pushing it. 
+
+5.What is a branch and why would I use one?
+A branch is an independent line of development, and it is used to avoid confusion between different parts of a project. 
+
+6.How could you visualize a branch with 3 commits, and then another branch that breaks off after the second commit and has a single commit?
+--does anybody have a tablet??--
+
+7.Give an example of a set of git commands that would result in a merge conflict.
+git push TextFilev1.txt
+git push TextFilev2.txt
+
+8.Is Git suitable for latex documents?
+Yes it is.
+
+9.Should I from now on version my word and powerpoint slides using git? Why/why not?
+No as the use of binary files in GitHub increases the used space. 
+
+10.What could happen when I push my latest commit to the remote repository without pulling first?
+It is likely that conflicts can arise as the changes made in the pulled file are likely not being included in the pushed one. 
+
+11.What happens when I pull without commiting my local changes first?
+Uncommitted local changes when pulling a file lead to not recording the changes in the repository, so the pulled file might be incomplete.
+
+12.What is the difference between branching and forking?
+Branching is the creation of an independent line, while forking is a copy of a project in your directory so that the original one is not affected.

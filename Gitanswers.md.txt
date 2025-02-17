@@ -1,0 +1,41 @@
+Questions
+
+1.What is the difference between git and GitLab?
+Git is a software program and a distributed version control system, while GitLab is a web-based platform which integrates Git repository management with continuous integration.
+GitHub is a platform that hosts Git repositories online, providing remote services for version control and collaboration, or it is an online hosting service.
+
+2.What is the difference between GitLab, GitHub, and BitBucket?
+They are different hosting services which have three different ways of dealing with the merge request process. 
+GitLab, GitHub, and BitBucket also have different capabilities - collaboration features, automation, tools, integrations etc. GitHub is mostly used at the company level when you have to collaborate with developers around the globe. On the other hand, GitLab is best when you need comprehensive features that support the end-to-end development process. BitBucket is best for teams that want to collaborate on private software. BitBucket is also more flexible (easy access CI and option to integrate various APIs with services).
+
+3.Why would I ever want to use git, but not GitLab?
+Git can be used for solo coding and offline use, while GitLab is a collaborative platform.
+
+4.What are the steps to update the GitLab server with some changes I made on my computer?
+I need to push the file I updated on my computer to the remote on GitHub/GitLab so that the other team members can get it by pulling it. 
+
+5.What is a branch and why would I use one?
+A branch is an independent line of development, and it is used to avoid conflicts between different parts of a project. 
+
+6.How could you visualize a branch with 3 commits, and then another branch that breaks off after the second commit and has a single commit?
+Let's say that there are three branches (A,B and C), D is the new branch which has split off the second commit (B) and it has a single commit. 
+
+7.Give an example of a set of git commands that would result in a merge conflict.
+git pull origin master 
+git push origin master.
+These changes create a conflict if there are modifications in the same part of the pulled file that weren’t merged properly once it is pushed back to Git.
+
+8.Is Git suitable for latex documents?
+Yes, it is. Git repositories should be used to store files, commit changes and work collaboratively.
+
+9.Should I from now on version my word and PowerPoint slides using git? Why/why not?
+No, as the use of binary files in GitHub increases the used space, makes Git inefficient as it is hard to track changes and hard to merge.
+
+10.What could happen when I push my latest commit to the remote repository without pulling first?
+It is likely that conflicts could arise, as if changes were made in the pulled file, they have not been included in the pushed one. Conversely, if the changes in the pulled and pushed files interest different parts of the two documents, no conflicts should arise.
+
+11.What happens when I pull without committing my local changes first?
+Uncommitted local changes when pulling a file lead to not recording the changes in the repository, so the pulled file might be incomplete.
+
+12.What is the difference between branching and forking?
+Branching creates an independent line of development within the same repository, while forking creates a copy of the repository in your own directory, so the original one is not affected.
