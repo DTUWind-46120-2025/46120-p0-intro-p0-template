@@ -1,6 +1,6 @@
 """Check whether the files for Week 1 are present.
 
-We will cover the anatomy of a test (given/when/then) in Week 2.
+We will cover the anatomy of a test (given/when/then) in Week 2.TEST
 """
 from pathlib import Path
 
